@@ -47,5 +47,8 @@ public class LMS
             System.out.println("5. Remove member");
             System.out.println("6. Back to Main Menu");
         }
+        if (choice==4)
+            System.out.println("Thanks for using LMS");
+            System.exit(0);
     }
 }
