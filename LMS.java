@@ -12,8 +12,10 @@ public class LMS
         System.out.println("3. Membership Management");
         System.out.println("4. Exit System");
         System.out.println();
+        
         System.out.print("Enter your choice: ");
         int choice = input.nextInt();
+
         if (choice == 1)
         {
             System.out.println("\n--- Books Management Menu ---");
@@ -27,6 +29,7 @@ public class LMS
             System.out.println("8. Show all issued books");
             System.out.println("9. Back to Main Menu");
         }
+
         if (choice == 2)
         {
             System.out.println("\n--- Study Room Management Menu ---");
@@ -36,6 +39,7 @@ public class LMS
             System.out.println("4. Check Reservation Status");
             System.out.println("5. Back to Main Menu");
         }
+
         if (choice == 3)
         {
             
@@ -47,8 +51,16 @@ public class LMS
             System.out.println("5. Remove member");
             System.out.println("6. Back to Main Menu");
         }
+        
         if (choice==4)
+        {
             System.out.println("Thanks for using LMS");
             System.exit(0);
+        }
+
+        if(choice < 1 || choice >4)
+        {
+            System.out.println("Invalid Choice, Please try again");
+        }
     }
 }
