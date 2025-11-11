@@ -33,8 +33,39 @@ public class LMS
         
             System.out.print("Enter your choice: ");
             bookChoice = input.nextInt();
+            switch (bookChoice) {
+                        case 1:
+                            System.out.println("-> You chose to Add a new book. (Functionality to be added later)");
+                            break;
+                        case 2:
+                            System.out.println("-> You chose to Remove a book. (Functionality to be added later)");
+                            break;
+                        case 3:
+                            System.out.println("-> You chose to Search book. (Functionality to be added later)");
+                            break;
+                        case 4:
+                            System.out.println("-> You chose to Display all available books. (Functionality to be added later)");
+                            break;
+                        case 5:
+                            System.out.println("-> You chose to Issue a book. (Functionality to be added later)");
+                            break;
+                        case 6:
+                            System.out.println("-> You chose to Return a book. (Functionality to be added later)");
+                            break;
+                        case 7:
+                            System.out.println("-> You chose to Update book quantity / status. (Functionality to be added later)");
+                            break;
+                        case 8:
+                            System.out.println("-> You chose to Show all issued books. (Functionality to be added later)");
+                            break;
+                        case 9:
+                            System.out.println("-> Returning to Main Menu.");
+                            break;
+                        default:
+                            System.out.println("[!] Invalid choice. Please try again.");
+                            break;
+                    }
         }
-
         if (choice == 2)
         {
             System.out.println("\n--- Study Room Management Menu ---");
