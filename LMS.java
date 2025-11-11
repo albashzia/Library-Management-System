@@ -17,7 +17,8 @@ public class LMS
         int choice = input.nextInt();
 
         if (choice == 1)
-        {
+        {   
+            int bookChoice;
             System.out.println("\n--- Books Management Menu ---");
             System.out.println("1. Add a new book");
             System.out.println("2. Remove a book");
@@ -28,6 +29,10 @@ public class LMS
             System.out.println("7. Update book quantity / status");
             System.out.println("8. Show all issued books");
             System.out.println("9. Back to Main Menu");
+            System.out.println();
+        
+            System.out.print("Enter your choice: ");
+            bookChoice = input.nextInt();
         }
 
         if (choice == 2)
