@@ -2,6 +2,13 @@ import java.util.Scanner;
 public class LMS
 {
     static final int MAX_BOOKS = 100;
+    
+    public static int[] bookIDs = new int[MAX_BOOKS];
+    public static String[] titles = new String[MAX_BOOKS];
+    public static String[] authors = new String[MAX_BOOKS];
+    public static int[] totalQuantities = new int[MAX_BOOKS]; // Total copies owned by library
+    public static int[] availableQuantities = new int[MAX_BOOKS]; // Copies available to borrow
+    public static String[] bookStatus = new String[MAX_BOOKS]; // e.g., "Good", "Damaged"
     public static void main(String args[])
     {
         Scanner input = new Scanner(System.in);
