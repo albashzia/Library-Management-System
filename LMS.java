@@ -113,6 +113,29 @@ public class LMS
             System.out.println();
             System.out.print("Enter choice: ");
             memberChoice = input.nextInt();
+            switch (memberChoice) {
+                        case 1:
+                            System.out.println("-> You chose to Register a new member. (Functionality to be added later)");
+                            break;
+                        case 2:
+                            System.out.println("-> You chose to Display all members. (Functionality to be added later)");
+                            break;
+                        case 3:
+                            System.out.println("-> You chose to Search members by ID or Name. (Functionality to be added later)");
+                            break;
+                        case 4:
+                            System.out.println("-> You chose to View issued books by a member. (Functionality to be added later)");
+                            break;
+                        case 5:
+                            System.out.println("-> You chose to Remove member. (Functionality to be added later)");
+                            break;
+                        case 6:
+                            System.out.println("-> Returning to Main Menu.");
+                            break;
+                        default:
+                            System.out.println("[!] Invalid choice. Please try again.");
+                            break;
+                    }
         }
 
         if (choice==4)
