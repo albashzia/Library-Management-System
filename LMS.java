@@ -1,6 +1,7 @@
 import java.util.Scanner;
 public class LMS
 {
+    static final int MAX_BOOKS = 100;
     public static void main(String args[])
     {
         Scanner input = new Scanner(System.in);
