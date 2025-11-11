@@ -102,7 +102,7 @@ public class LMS
 
         if (choice == 3)
         {
-            
+            int memberChoice;
             System.out.println("\n--- Membership Management Menu ---");
             System.out.println("1. Register a new member");
             System.out.println("2. Display all members");
@@ -110,6 +110,9 @@ public class LMS
             System.out.println("4. View issued books by a member");
             System.out.println("5. Remove member");
             System.out.println("6. Back to Main Menu");
+            System.out.println();
+            System.out.print("Enter choice: ");
+            memberChoice = input.nextInt();
         }
 
         if (choice==4)
