@@ -78,6 +78,26 @@ public class LMS
             System.out.println();
             System.out.print("Enter choice: ");
             roomChoice = input.nextInt();
+            switch (roomChoice) {
+                        case 1:
+                            System.out.println("-> You chose to Show Available Study Rooms. (Functionality to be added later)");
+                            break;
+                        case 2:
+                            System.out.println("-> You chose to Reserve a study room. (Functionality to be added later)");
+                            break;
+                        case 3:
+                            System.out.println("-> You chose to Cancel Reservation. (Functionality to be added later)");
+                            break;
+                        case 4:
+                            System.out.println("-> You chose to Check Reservation Status. (Functionality to be added later)");
+                            break;
+                        case 5:
+                            System.out.println("-> Returning to Main Menu.");
+                            break;
+                        default:
+                            System.out.println("[!] Invalid choice. Please try again.");
+                            break;
+                    }
         }
 
         if (choice == 3)
