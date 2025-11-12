@@ -45,6 +45,11 @@ public class LMS
     {
         System.out.println("-> Functionality to update book quantity / status.");
     }
+
+    public static void showAllIssuedBooks() 
+    {
+        System.out.println("-> Functionality to show all issued books (transaction log).");
+    }
     public static void main(String args[])
     {
         Scanner input = new Scanner(System.in);
