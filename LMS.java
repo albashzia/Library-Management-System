@@ -26,6 +26,11 @@ public class LMS
         System.out.println("-> Functionality to search a book.");
     }
 
+    public static void displayAvailableBooks()
+    {
+        System.out.println("-> Functionality to display all available books.");
+    }
+    
     public static void main(String args[])
     {
         Scanner input = new Scanner(System.in);
