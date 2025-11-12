@@ -9,6 +9,13 @@ public class LMS
     public static int[] totalQuantities = new int[MAX_BOOKS]; // Total copies owned by library
     public static int[] availableQuantities = new int[MAX_BOOKS]; // Copies available to borrow
     public static String[] bookStatus = new String[MAX_BOOKS]; // e.g., "Good", "Damaged"
+
+
+    public static void addBook(Scanner input) 
+    {
+        System.out.println("-> Functionality to add a book."); 
+    }
+    
     public static void main(String args[])
     {
         Scanner input = new Scanner(System.in);
