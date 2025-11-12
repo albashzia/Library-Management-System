@@ -113,7 +113,7 @@ public class LMS
                             showAllIssuedBooks();
                             break;
                         case 9:
-                            System.out.println("-> Returning to Main Menu.");
+                            backToMainMenu();
                             break;
                         default:
                             System.out.println("[!] Invalid choice. Please try again.");
