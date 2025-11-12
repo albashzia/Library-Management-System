@@ -50,6 +50,11 @@ public class LMS
     {
         System.out.println("-> Functionality to show all issued books (transaction log).");
     }
+
+    public static void backToMainMenu() 
+    {
+        System.out.println("-> Returning to Main Menu.");
+    }
     public static void main(String args[])
     {
         Scanner input = new Scanner(System.in);
