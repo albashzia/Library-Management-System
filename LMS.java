@@ -82,7 +82,7 @@ public class LMS
                             displayAvailableBooks();
                             break;
                         case 5:
-                            System.out.println("-> You chose to Issue a book. (Functionality to be added later)");
+                            issueBook(input);
                             break;
                         case 6:
                             System.out.println("-> You chose to Return a book. (Functionality to be added later)");
