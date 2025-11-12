@@ -40,6 +40,11 @@ public class LMS
     {
         System.out.println("-> Functionality to return a book.");
     }
+
+    public static void updateBookDetails(Scanner input) 
+    {
+        System.out.println("-> Functionality to update book quantity / status.");
+    }
     public static void main(String args[])
     {
         Scanner input = new Scanner(System.in);
