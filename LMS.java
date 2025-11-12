@@ -30,7 +30,7 @@ public class LMS
     {
         System.out.println("-> Functionality to display all available books.");
     }
-    
+
     public static void main(String args[])
     {
         Scanner input = new Scanner(System.in);
@@ -74,7 +74,7 @@ public class LMS
                             searchBook(input);
                             break;
                         case 4:
-                            System.out.println("-> You chose to Display all available books. (Functionality to be added later)");
+                            displayAvailableBooks();
                             break;
                         case 5:
                             System.out.println("-> You chose to Issue a book. (Functionality to be added later)");
