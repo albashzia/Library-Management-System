@@ -16,6 +16,11 @@ public class LMS
         System.out.println("-> Functionality to add a book."); 
     }
 
+    public static void removeBook(Scanner input) 
+    {
+        System.out.println("-> Functionality to remove a book.");
+    }
+
     public static void main(String args[])
     {
         Scanner input = new Scanner(System.in);
