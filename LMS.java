@@ -97,7 +97,7 @@ public class LMS
                             returnBook(input);
                             break;
                         case 7:
-                            System.out.println("-> You chose to Update book quantity / status. (Functionality to be added later)");
+                            updateBookDetails(input);
                             break;
                         case 8:
                             System.out.println("-> You chose to Show all issued books. (Functionality to be added later)");
