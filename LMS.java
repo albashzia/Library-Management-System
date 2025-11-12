@@ -15,7 +15,7 @@ public class LMS
     {
         System.out.println("-> Functionality to add a book."); 
     }
-    
+
     public static void main(String args[])
     {
         Scanner input = new Scanner(System.in);
@@ -50,7 +50,7 @@ public class LMS
             bookChoice = input.nextInt();
             switch (bookChoice) {
                         case 1:
-                            System.out.println("-> You chose to Add a new book. (Functionality to be added later)");
+                            addBook(input);
                             break;
                         case 2:
                             System.out.println("-> You chose to Remove a book. (Functionality to be added later)");
