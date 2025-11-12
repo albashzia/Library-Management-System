@@ -25,7 +25,7 @@ public class LMS
     {
         System.out.println("-> Functionality to search a book.");
     }
-    
+
     public static void main(String args[])
     {
         Scanner input = new Scanner(System.in);
@@ -66,7 +66,7 @@ public class LMS
                             removeBook(input);
                             break;
                         case 3:
-                            System.out.println("-> You chose to Search book. (Functionality to be added later)");
+                            searchBook(input);
                             break;
                         case 4:
                             System.out.println("-> You chose to Display all available books. (Functionality to be added later)");
