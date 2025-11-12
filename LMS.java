@@ -58,7 +58,7 @@ public class LMS
                             addBook(input);
                             break;
                         case 2:
-                            System.out.println("-> You chose to Remove a book. (Functionality to be added later)");
+                            removeBook(input);
                             break;
                         case 3:
                             System.out.println("-> You chose to Search book. (Functionality to be added later)");
