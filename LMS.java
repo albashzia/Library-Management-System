@@ -105,7 +105,7 @@ public class LMS
                             updateBookDetails(input);
                             break;
                         case 8:
-                            System.out.println("-> You chose to Show all issued books. (Functionality to be added later)");
+                            showAllIssuedBooks();
                             break;
                         case 9:
                             System.out.println("-> Returning to Main Menu.");
