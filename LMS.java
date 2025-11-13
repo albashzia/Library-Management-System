@@ -21,6 +21,20 @@ public class LMS
         System.out.println("4. Exit System");
     }
 
+    private static void bookMenu()
+    {
+        System.out.println("\n--- Books Management Menu ---");
+        System.out.println("1. Add a new book");
+        System.out.println("2. Remove a book");
+        System.out.println("3. Search book by ID or Author");
+        System.out.println("4. Display all available books");
+        System.out.println("5. Issue a book");
+        System.out.println("6. Return a book");
+        System.out.println("7. Update book quantity / status");
+        System.out.println("8. Show all issued books");
+        System.out.println("9. Back to Main Menu");
+    }
+
     public static void addBook(Scanner input) 
     {
         System.out.println("-> Functionality to add a book."); 
