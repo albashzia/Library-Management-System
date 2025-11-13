@@ -182,7 +182,7 @@ public class LMS
         if (choice == 3)
         {
             int memberChoice;
-            
+            memberMenu();
             System.out.println();
             System.out.print("Enter choice: ");
             memberChoice = input.nextInt();
