@@ -10,8 +10,8 @@ public class LMS
     public static int[] availableQuantities = new int[MAX_BOOKS]; // Copies available to borrow
     public static String[] bookStatus = new String[MAX_BOOKS]; // e.g., "Good", "Damaged"
 
-        private static void displayMainMenu() 
-        {
+    private static void displayMainMenu() 
+    {
         System.out.println("\n=============================================");
         System.out.println("               MAIN MENU");
         System.out.println("=============================================");
