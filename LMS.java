@@ -91,16 +91,7 @@ public class LMS
         if (choice == 1)
         {   
             int bookChoice;
-            System.out.println("\n--- Books Management Menu ---");
-            System.out.println("1. Add a new book");
-            System.out.println("2. Remove a book");
-            System.out.println("3. Search book by ID or Author");
-            System.out.println("4. Display all available books");
-            System.out.println("5. Issue a book");
-            System.out.println("6. Return a book");
-            System.out.println("7. Update book quantity / status");
-            System.out.println("8. Show all issued books");
-            System.out.println("9. Back to Main Menu");
+            
             System.out.println();
         
             System.out.print("Enter your choice: ");
