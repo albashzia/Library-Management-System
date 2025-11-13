@@ -45,6 +45,17 @@ public class LMS
         System.out.println("5. Back to Main Menu");
     }
 
+    private static void memberMenu()
+    {
+        System.out.println("\n--- Membership Management Menu ---");
+        System.out.println("1. Register a new member");
+        System.out.println("2. Display all members");
+        System.out.println("3. Search members by ID or Name");
+        System.out.println("4. View issued books by a member");
+        System.out.println("5. Remove member");
+        System.out.println("6. Back to Main Menu");
+    }
+
     public static void addBook(Scanner input) 
     {
         System.out.println("-> Functionality to add a book."); 
