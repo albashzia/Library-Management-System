@@ -91,7 +91,7 @@ public class LMS
         if (choice == 1)
         {   
             int bookChoice;
-            
+            bookMenu();
             System.out.println();
         
             System.out.print("Enter your choice: ");
