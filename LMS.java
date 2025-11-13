@@ -142,7 +142,7 @@ public class LMS
         if (choice == 2)
         {
             int roomChoice;
-            
+            roomMenu();
             System.out.println();
             System.out.print("Enter choice: ");
             roomChoice = input.nextInt();
