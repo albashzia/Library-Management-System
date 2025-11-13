@@ -142,12 +142,7 @@ public class LMS
         if (choice == 2)
         {
             int roomChoice;
-            System.out.println("\n--- Study Room Management Menu ---");
-            System.out.println("1. Show Available Study Rooms");
-            System.out.println("2. Reserve a study room");
-            System.out.println("3. Cancel Reservation");
-            System.out.println("4. Check Reservation Status");
-            System.out.println("5. Back to Main Menu");
+            
             System.out.println();
             System.out.print("Enter choice: ");
             roomChoice = input.nextInt();
