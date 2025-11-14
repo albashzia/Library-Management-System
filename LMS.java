@@ -249,7 +249,7 @@ public class LMS
                             showAvailableRooms();
                             break;
                         case 2:
-                            System.out.println("-> You chose to Reserve a study room. (Functionality to be added later)");
+                            reserveRoom();
                             break;
                         case 3:
                             System.out.println("-> You chose to Cancel Reservation. (Functionality to be added later)");
