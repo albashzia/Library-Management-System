@@ -171,6 +171,11 @@ public class LMS
     {
         System.out.println("-> Returning to Main Menu.");
     }
+
+    public static void showAvailableRooms() 
+    {
+        System.out.println("-> Functionality to show available study rooms.");
+    }
     public static void main(String args[])
     {
         Scanner input = new Scanner(System.in);
