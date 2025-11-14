@@ -83,7 +83,28 @@ public class LMS
 
     public static void searchBook(Scanner input) 
     {
-        System.out.println("-> Functionality to search a book.");
+        System.out.println("\n--- Search Book ---");
+        System.out.println("Search by (1) ID or (2) Author?");
+        System.out.print("Enter option (1 or 2): ");
+        int type = input.nextInt();
+        input.nextLine();
+
+        if (type == 1) 
+        {
+            System.out.print("Enter Book ID: ");
+            int id = input.nextInt();
+            input.nextLine();
+            System.out.println("-> Searching for book with ID: " + id);
+        }
+         else if (type == 2) 
+         {
+            System.out.print("Enter Author Name: ");
+            String authorName = input.nextLine();
+            System.out.println("-> Searching for books by author: " + authorName);
+        } else 
+        {
+            System.out.println("[!] Invalid search option.");
+        }
     }
 
     public static void displayAvailableBooks()
