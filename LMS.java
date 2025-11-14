@@ -58,7 +58,18 @@ public class LMS
 
     public static void addBook(Scanner input) 
     {
-        System.out.println("-> Functionality to add a book."); 
+        System.out.println("\n--- Add a New Book ---");
+        System.out.print("Enter new Book ID: ");
+        int id = input.nextInt(); 
+        input.nextLine();
+        System.out.print("Enter Book Title: ");
+        String title = input.nextLine();
+        System.out.print("Enter Author Name: ");
+        String author = input.nextLine();
+        System.out.print("Enter Total Quantity purchased: ");
+        int total = input.nextInt();
+        input.nextLine(); 
+        System.out.println("-> Collected details for: " + title + " (ID: " + id + ", Qty: " + total + ")"); 
     }
 
     public static void removeBook(Scanner input) 
