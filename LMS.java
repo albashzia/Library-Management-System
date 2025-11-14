@@ -187,6 +187,11 @@ public class LMS
         System.out.println("-> Functionality to cancel a reservation.");
     }
 
+    public static void checkReservationStatus(Scanner scanner) 
+    {
+        System.out.println("-> Functionality to check reservation status.");
+    }
+
     public static void main(String args[])
     {
         Scanner input = new Scanner(System.in);
