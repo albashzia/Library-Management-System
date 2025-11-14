@@ -127,7 +127,13 @@ public class LMS
 
     public static void returnBook(Scanner input) 
     {
-        System.out.println("-> Functionality to return a book.");
+        System.out.println("\n--- Return a Book ---");
+        System.out.print("Enter Book ID to return: ");
+        int bookId = input.nextInt();
+        System.out.print("Enter Member ID who is returning the book: ");
+        int memberId = input.nextInt();
+        input.nextLine();
+        System.out.println("-> Attempting to return Book " + bookId + " from Member " + memberId);
     }
 
     public static void updateBookDetails(Scanner input) 
