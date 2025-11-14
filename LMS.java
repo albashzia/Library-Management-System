@@ -246,7 +246,7 @@ public class LMS
             roomChoice = input.nextInt();
             switch (roomChoice) {
                         case 1:
-                            System.out.println("-> You chose to Show Available Study Rooms. (Functionality to be added later)");
+                            showAvailableRooms();
                             break;
                         case 2:
                             System.out.println("-> You chose to Reserve a study room. (Functionality to be added later)");
