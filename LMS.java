@@ -74,7 +74,11 @@ public class LMS
 
     public static void removeBook(Scanner input) 
     {
-        System.out.println("-> Functionality to remove a book.");
+        System.out.println("\n--- Remove a Book ---");
+        System.out.print("Enter Book ID to remove: ");
+        int id = input.nextInt();
+        input.nextLine();
+        System.out.println("-> Attempting to remove book with ID: " + id);
     }
 
     public static void searchBook(Scanner input) 
