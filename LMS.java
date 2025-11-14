@@ -114,7 +114,15 @@ public class LMS
 
     public static void issueBook(Scanner input) 
     {
-        System.out.println("-> Functionality to issue a book.");
+        System.out.println("\n--- Issue a Book ---");
+        System.out.print("Enter Book ID to issue: ");
+        int bookId = input.nextInt();
+        System.out.print("Enter Member ID: ");
+        int memberId = input.nextInt();
+        input.nextLine(); 
+        System.out.print("Enter today's Date (YYYY-MM-DD): ");
+        String date = input.nextLine();
+        System.out.println("-> Attempting to issue Book " + bookId + " to Member " + memberId + " on " + date);
     }
 
     public static void returnBook(Scanner input) 
