@@ -176,6 +176,11 @@ public class LMS
     {
         System.out.println("-> Functionality to show available study rooms.");
     }
+
+    public static void reserveRoom() 
+    {
+        System.out.println("-> Functionality to reserve a study room.");
+    }
     public static void main(String args[])
     {
         Scanner input = new Scanner(System.in);
