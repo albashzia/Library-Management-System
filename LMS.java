@@ -181,6 +181,12 @@ public class LMS
     {
         System.out.println("-> Functionality to reserve a study room.");
     }
+
+    public static void cancelReservation() 
+    {
+        System.out.println("-> Functionality to cancel a reservation.");
+    }
+
     public static void main(String args[])
     {
         Scanner input = new Scanner(System.in);
