@@ -257,7 +257,7 @@ public class LMS
                             reserveRoom();
                             break;
                         case 3:
-                            System.out.println("-> You chose to Cancel Reservation. (Functionality to be added later)");
+                            cancelReservation();
                             break;
                         case 4:
                             System.out.println("-> You chose to Check Reservation Status. (Functionality to be added later)");
