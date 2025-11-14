@@ -260,7 +260,7 @@ public class LMS
                             cancelReservation();
                             break;
                         case 4:
-                            System.out.println("-> You chose to Check Reservation Status. (Functionality to be added later)");
+                            checkReservationStatus(input);
                             break;
                         case 5:
                             System.out.println("-> Returning to Main Menu.");
