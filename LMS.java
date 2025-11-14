@@ -138,7 +138,28 @@ public class LMS
 
     public static void updateBookDetails(Scanner input) 
     {
-        System.out.println("-> Functionality to update book quantity / status.");
+        System.out.println("\n--- Update Book Details ---");
+        System.out.print("Enter Book ID to update: ");
+        int id = input.nextInt();
+        input.nextLine();
+        System.out.println("1. Update Total Quantity");
+        System.out.println("2. Update Book Status (e.g., Damaged, Lost)");
+        System.out.print("Enter update choice (1 or 2): ");
+        int choice = input.nextInt();
+        input.nextLine();
+        if (choice == 1) 
+        {
+            System.out.print("Enter NEW total quantity: ");
+            int newTotal = input.nextInt();
+            input.nextLine();
+            System.out.println("-> Updating quantity of Book " + id + " to " + newTotal);
+        } 
+        else if (choice == 2) 
+        {
+            System.out.print("Enter new status (e.g., Damaged, Good): ");
+            String newStatus = input.nextLine();
+            System.out.println("-> Updating status of Book " + id + " to " + newStatus);
+        }
     }
 
     public static void showAllIssuedBooks() 
