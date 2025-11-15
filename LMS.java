@@ -317,7 +317,7 @@ public class LMS
                             viewIssuedBooksByMember(input);
                             break;
                         case 5:
-                            System.out.println("-> You chose to Remove member. (Functionality to be added later)");
+                            removeMember(input);
                             break;
                         case 6:
                             System.out.println("-> Returning to Main Menu.");
