@@ -309,7 +309,7 @@ public class LMS
                             searchMember(input);
                             break;
                         case 4:
-                            System.out.println("-> You chose to View issued books by a member. (Functionality to be added later)");
+                            viewIssuedBooksByMember(input);
                             break;
                         case 5:
                             System.out.println("-> You chose to Remove member. (Functionality to be added later)");
