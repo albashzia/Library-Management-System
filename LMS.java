@@ -69,7 +69,7 @@ public class LMS
         System.out.print("Enter Total Quantity purchased: ");
         int total = input.nextInt();
         input.nextLine(); 
-        System.out.println("-> Collected details for: " + title + " (ID: " + id + ", Qty: " + total + ")"); 
+        System.out.println("-> Collected details for: " + title + " (ID: " + id + ", Qty: " + total + ") by "+author); 
     }
 
     public static void removeBook(Scanner input) 
