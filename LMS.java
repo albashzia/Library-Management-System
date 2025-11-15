@@ -206,7 +206,7 @@ public class LMS
     {
         System.out.println("-> Functionality to search members by ID or Name.");
     }
-    
+
     public static void main(String args[])
     {
         Scanner input = new Scanner(System.in);
@@ -301,7 +301,7 @@ public class LMS
                             displayAllMembers();
                             break;
                         case 3:
-                            System.out.println("-> You chose to Search members by ID or Name. (Functionality to be added later)");
+                            searchMember(input);
                             break;
                         case 4:
                             System.out.println("-> You chose to View issued books by a member. (Functionality to be added later)");
