@@ -197,6 +197,11 @@ public class LMS
         System.out.println("-> Functionality to register a new member.");
     }
 
+    public static void displayAllMembers() 
+    {
+        System.out.println("-> Functionality to display all members.");
+    }
+
     public static void main(String args[])
     {
         Scanner input = new Scanner(System.in);
