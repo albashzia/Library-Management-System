@@ -212,6 +212,11 @@ public class LMS
         System.out.println("-> Functionality to view issued books by a member.");
     }
 
+    public static void removeMember(Scanner input) 
+    {
+        System.out.println("-> Functionality to remove a member.");
+    }
+
     public static void main(String args[])
     {
         Scanner input = new Scanner(System.in);
