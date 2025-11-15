@@ -285,7 +285,7 @@ public class LMS
             memberChoice = input.nextInt();
             switch (memberChoice) {
                         case 1:
-                            System.out.println("-> You chose to Register a new member. (Functionality to be added later)");
+                            registerNewMember(input);
                             break;
                         case 2:
                             System.out.println("-> You chose to Display all members. (Functionality to be added later)");
