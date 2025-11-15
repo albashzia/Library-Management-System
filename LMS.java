@@ -293,7 +293,7 @@ public class LMS
                             registerNewMember(input);
                             break;
                         case 2:
-                            System.out.println("-> You chose to Display all members. (Functionality to be added later)");
+                            displayAllMembers();
                             break;
                         case 3:
                             System.out.println("-> You chose to Search members by ID or Name. (Functionality to be added later)");
