@@ -260,7 +260,19 @@ public class LMS
 
     public static void removeMember(Scanner input) 
     {
-        System.out.println("-> Functionality to remove a member.");
+        System.out.println("\n--- Remove Member ---");
+        System.out.print("Enter Member ID to remove: ");
+        int id = input.nextInt();
+        input.nextLine();
+        
+        // --- Mock Logic ---
+        if (id == 5002) {
+            System.out.println("\n[+] Member ID 5002 removed successfully.");
+        } else if (id == 5001) {
+            System.out.println("\n[!] Removal Failed: Member 5001 has outstanding books.");
+        } else {
+            System.out.println("\n[!] Member ID not found.");
+        }
     }
 
     public static void main(String args[])
