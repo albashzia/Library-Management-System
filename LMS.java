@@ -219,7 +219,25 @@ public class LMS
 
     public static void searchMember(Scanner input) 
     {
-        System.out.println("-> Functionality to search members by ID or Name.");
+        System.out.println("\n--- Search Member ---");
+        System.out.println("Search by (1) ID or (2) Name?");
+        System.out.print("Enter option (1 or 2): ");
+        int type = input.nextInt();
+        input.nextLine();
+        
+        // --- Mock Logic ---
+        if (type == 1) {
+            System.out.print("Enter Member ID: ");
+            int id = input.nextInt();
+            input.nextLine();
+            System.out.println("\n[+] Found: ID " + id + ", Name: M. Khan");
+        } else if (type == 2) {
+            System.out.print("Enter Member Name: ");
+            String name = input.nextLine();
+            System.out.println("\n[+] Found: Name " + name + ", ID: 5001");
+        } else {
+            System.out.println("[!] Invalid search option.");
+        }
     }
 
     public static void viewIssuedBooksByMember(Scanner input) 
