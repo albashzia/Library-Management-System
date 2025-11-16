@@ -174,7 +174,12 @@ public class LMS
 
     public static void showAvailableRooms() 
     {
-        System.out.println("-> Functionality to show available study rooms.");
+        System.out.println("\n--- Available Study Rooms (Mock Data) ---");
+        System.out.printf("%-10s | %-15s | %-15s%n", "Room No.", "Status", "Reserved By");
+        System.out.println("---------------------------------------------");
+        System.out.printf("%-10d | %-15s | %-15s%n", 101, "Reserved", "5001 (A. Johnson)");
+        System.out.printf("%-10d | %-15s | %-15s%n", 102, "Available", "N/A");
+        System.out.printf("%-10d | %-15s | %-15s%n", 103, "Available", "N/A");
     }
 
     public static void reserveRoom() 
