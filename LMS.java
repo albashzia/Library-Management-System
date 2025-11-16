@@ -199,7 +199,13 @@ public class LMS
 
     public static void registerNewMember(Scanner input) 
     {
-        System.out.println("-> Functionality to register a new member.");
+        System.out.println("\n--- Register a New Member ---");
+        System.out.print("Enter Member Name: ");
+        String name = input.nextLine();
+        // Mocking automatic ID generation
+        int newId = 5003; 
+        System.out.println("\n[+] Member '" + name + "' registered successfully.");
+        System.out.println("[*] Assigned Member ID: " + newId);
     }
 
     public static void displayAllMembers() 
