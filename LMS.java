@@ -246,11 +246,6 @@ public class LMS
         System.out.println("\n--- Books Issued to Member " + id + " ---");
         System.out.printf("%-10s | %-30s | %-15s%n", "Book ID", "Title", "Issue Date");
         System.out.println("---------------------------------------------------------------");
-        if (id == 5001) {
-            System.out.printf("%-10d | %-30s | %-15s%n", 101, "Java Programming Basics", "2025-10-01");
-        } else {
-            System.out.println("No books currently issued to this member.");
-        }
     }
 
     public static void removeMember(Scanner input) 
