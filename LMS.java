@@ -210,8 +210,6 @@ public class LMS
         System.out.println("\n--- All Registered Members (Mock Data) ---");
         System.out.printf("%-15s | %-30s%n", "Member ID", "Name");
         System.out.println("----------------------------------------------");
-        System.out.printf("%-15d | %-30s%n", 5001, "A. Johnson");
-        System.out.printf("%-15d | %-30s%n", 5002, "M. Khan");
     }
 
     public static void searchMember(Scanner input) 
