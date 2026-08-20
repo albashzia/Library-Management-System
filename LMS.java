@@ -62,14 +62,17 @@ public class LMS
         System.out.println("\n--- Add a New Book ---");
         System.out.print("Enter new Book ID: ");
         int id = input.nextInt();
-
+        bookIDs.add(id);
         input.nextLine();
         System.out.print("Enter Book Title: ");
         String title = input.nextLine();
+        titles.add(title);
         System.out.print("Enter Author Name: ");
         String author = input.nextLine();
+        authors.add(author);
         System.out.print("Enter Total Quantity purchased: ");
         int total = input.nextInt();
+        totalQuantities.add(total);
         input.nextLine(); 
         System.out.println("-> Collected details for: " + title + " (ID: " + id + ", Qty: " + total + ") by "+author); 
     }
