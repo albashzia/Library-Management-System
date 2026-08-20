@@ -1,14 +1,15 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 public class LMS
 {
     static final int MAX_BOOKS = 100;
     
-    public static int[] bookIDs = new int[MAX_BOOKS];
-    public static String[] titles = new String[MAX_BOOKS];
-    public static String[] authors = new String[MAX_BOOKS];
-    public static int[] totalQuantities = new int[MAX_BOOKS]; // Total copies owned by library
-    public static int[] availableQuantities = new int[MAX_BOOKS]; // Copies available to borrow
-    public static String[] bookStatus = new String[MAX_BOOKS]; // e.g., "Good", "Damaged"
+    public static ArrayList<Integer> bookIDs = new ArrayList<>();
+    public static ArrayList<String> titles = new ArrayList<>();
+    public static ArrayList<String> authors = new ArrayList<>();
+    public static ArrayList<Integer> totalQuantities = new ArrayList<>(); // Total copies owned by library
+    public static ArrayList<Integer> availableQuantities = new ArrayList<>(); // Copies available to borrow
+    public static ArrayList<String> bookStatus = new ArrayList<>(); // e.g., "Good", "Damaged"
 
     private static void displayMainMenu() 
     {
@@ -60,7 +61,8 @@ public class LMS
     {
         System.out.println("\n--- Add a New Book ---");
         System.out.print("Enter new Book ID: ");
-        int id = input.nextInt(); 
+        int id = input.nextInt();
+
         input.nextLine();
         System.out.print("Enter Book Title: ");
         String title = input.nextLine();
