@@ -84,6 +84,15 @@ public class LMS
         int id = input.nextInt();
         input.nextLine();
         System.out.println("-> Attempting to remove book with ID: " + id);
+        for (int i=0; i < bookIDs.size(); i++){
+            if (bookIDs.get(i)==id){
+                bookIDs.remove(i);
+                titles.remove(i);
+                authors.remove(i);
+                totalQuantities.remove(i);
+                System.out.println("Book Removed Successfully");
+            }
+        }
     }
 
     public static void searchBook(Scanner input) 
