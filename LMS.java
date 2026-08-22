@@ -250,13 +250,18 @@ public class LMS
         System.out.print("Enter option (1 or 2): ");
         int type = input.nextInt();
         input.nextLine();
-        
-        // --- Mock Logic ---
+
         if (type == 1) {
             System.out.print("Enter Member ID: ");
             int id = input.nextInt();
             input.nextLine();
-            System.out.println("\n[+] Found: ID " + id + ", Name: M. Khan");
+            for(int i = 0; i < memberIds.size(); i++){
+                if (memberIds.get(i)==id){
+                    System.out.println("Member found");
+                    System.out.println("Id: "+memberIds.get(i));
+                    System.out.println("Name: "+memberNames.get(i));
+                }
+            }
         } else if (type == 2) {
             System.out.print("Enter Member Name: ");
             String name = input.nextLine();
