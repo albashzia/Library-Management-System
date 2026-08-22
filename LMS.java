@@ -2,7 +2,6 @@ import java.util.ArrayList;
 import java.util.Scanner;
 public class LMS
 {
-    static final int MAX_BOOKS = 100;
     
     public static ArrayList<Integer> bookIDs = new ArrayList<>();
     public static ArrayList<String> titles = new ArrayList<>();
