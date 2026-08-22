@@ -127,6 +127,18 @@ public class LMS
             System.out.print("Enter Author Name: ");
             String authorName = input.nextLine();
             System.out.println("-> Searching for books by author: " + authorName);
+
+            for (int i = 0; i < authors.size(); i++){
+                if (authors.get(i).equalsIgnoreCase(authorName)){
+                    System.out.println("Book found");
+                    System.out.println("Book Id: "+bookIDs.get(i));
+                    System.out.println("Book Name: "+titles.get(i));
+                    System.out.println("Author Name: "+authors.get(i));
+                }
+                else{
+                    System.out.println("Book not found");
+                }
+            }
         } else 
         {
             System.out.println("[!] Invalid search option.");
