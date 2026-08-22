@@ -287,119 +287,117 @@ public class LMS
         
         System.out.print("Enter your choice: ");
         int choice = input.nextInt();
+        while (choice!=4){
 
-        if (choice == 1)
-        {   
-            int bookChoice;
-            bookMenu();
-            System.out.println();
-        
-            System.out.print("Enter your choice: ");
-            bookChoice = input.nextInt();
-            switch (bookChoice) {
-                        case 1:
-                            addBook(input);
-                            break;
-                        case 2:
-                            removeBook(input);
-                            break;
-                        case 3:
-                            searchBook(input);
-                            break;
-                        case 4:
-                            displayAvailableBooks();
-                            break;
-                        case 5:
-                            issueBook(input);
-                            break;
-                        case 6:
-                            returnBook(input);
-                            break;
-                        case 7:
-                            updateBookDetails(input);
-                            break;
-                        case 8:
-                            showAllIssuedBooks();
-                            break;
-                        case 9:
-                            backToMainMenu();
-                            break;
-                        default:
-                            System.out.println("[!] Invalid choice. Please try again.");
-                            break;
-                    }
-        }
-        if (choice == 2)
-        {
-            int roomChoice;
-            roomMenu();
-            System.out.println();
-            System.out.print("Enter choice: ");
-            roomChoice = input.nextInt();
-            switch (roomChoice) {
-                        case 1:
-                            showAvailableRooms();
-                            break;
-                        case 2:
-                            reserveRoom();
-                            break;
-                        case 3:
-                            cancelReservation();
-                            break;
-                        case 4:
-                            checkReservationStatus(input);
-                            break;
-                        case 5:
-                            System.out.println("-> Returning to Main Menu.");
-                            break;
-                        default:
-                            System.out.println("[!] Invalid choice. Please try again.");
-                            break;
-                    }
+            if(choice < 1 || choice >4)
+            {
+                System.out.println("Invalid Choice, Please try again");
+            }
+
+            if (choice == 1)
+            {
+                int bookChoice;
+                bookMenu();
+                System.out.println();
+
+                System.out.print("Enter your choice: ");
+                bookChoice = input.nextInt();
+                switch (bookChoice) {
+                    case 1:
+                        addBook(input);
+                        break;
+                    case 2:
+                        removeBook(input);
+                        break;
+                    case 3:
+                        searchBook(input);
+                        break;
+                    case 4:
+                        displayAvailableBooks();
+                        break;
+                    case 5:
+                        issueBook(input);
+                        break;
+                    case 6:
+                        returnBook(input);
+                        break;
+                    case 7:
+                        updateBookDetails(input);
+                        break;
+                    case 8:
+                        showAllIssuedBooks();
+                        break;
+                    case 9:
+                        backToMainMenu();
+                        break;
+                    default:
+                        System.out.println("[!] Invalid choice. Please try again.");
+                        break;
+                }
+            }
+            if (choice == 2)
+            {
+                int roomChoice;
+                roomMenu();
+                System.out.println();
+                System.out.print("Enter choice: ");
+                roomChoice = input.nextInt();
+                switch (roomChoice) {
+                    case 1:
+                        showAvailableRooms();
+                        break;
+                    case 2:
+                        reserveRoom();
+                        break;
+                    case 3:
+                        cancelReservation();
+                        break;
+                    case 4:
+                        checkReservationStatus(input);
+                        break;
+                    case 5:
+                        System.out.println("-> Returning to Main Menu.");
+                        break;
+                    default:
+                        System.out.println("[!] Invalid choice. Please try again.");
+                        break;
+                }
+            }
+
+            if (choice == 3)
+            {
+                int memberChoice;
+                memberMenu();
+                System.out.println();
+                System.out.print("Enter choice: ");
+                memberChoice = input.nextInt();
+                switch (memberChoice) {
+                    case 1:
+                        registerNewMember(input);
+                        break;
+                    case 2:
+                        displayAllMembers();
+                        break;
+                    case 3:
+                        searchMember(input);
+                        break;
+                    case 4:
+                        viewIssuedBooksByMember(input);
+                        break;
+                    case 5:
+                        removeMember(input);
+                        break;
+                    case 6:
+                        System.out.println("-> Returning to Main Menu.");
+                        break;
+                    default:
+                        System.out.println("[!] Invalid choice. Please try again.");
+                        break;
+                }
+            }
         }
 
-        if (choice == 3)
-        {
-            int memberChoice;
-            memberMenu();
-            System.out.println();
-            System.out.print("Enter choice: ");
-            memberChoice = input.nextInt();
-            switch (memberChoice) {
-                        case 1:
-                            registerNewMember(input);
-                            break;
-                        case 2:
-                            displayAllMembers();
-                            break;
-                        case 3:
-                            searchMember(input);
-                            break;
-                        case 4:
-                            viewIssuedBooksByMember(input);
-                            break;
-                        case 5:
-                            removeMember(input);
-                            break;
-                        case 6:
-                            System.out.println("-> Returning to Main Menu.");
-                            break;
-                        default:
-                            System.out.println("[!] Invalid choice. Please try again.");
-                            break;
-                    }
-        }
-
-        if (choice==4)
-        {
-            System.out.println("Thanks for using LMS");
-            System.exit(0);
-        }
-
-        if(choice < 1 || choice >4)
-        {
-            System.out.println("Invalid Choice, Please try again");
-        }
+        System.exit(0);
 
         input.close();
     }
