@@ -10,6 +10,9 @@ public class LMS
     public static ArrayList<Integer> availableQuantities = new ArrayList<>(); // Copies available to borrow
     public static ArrayList<String> bookStatus = new ArrayList<>(); // e.g., "Good", "Damaged"
 
+    public static ArrayList<String> memberNames = new ArrayList<>();
+    public static ArrayList<Integer> memberIds = new ArrayList<>();
+
     private static void displayMainMenu() 
     {
         System.out.println("\n=============================================");
