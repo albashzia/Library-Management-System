@@ -108,6 +108,16 @@ public class LMS
             int id = input.nextInt();
             input.nextLine();
             System.out.println("-> Searching for book with ID: " + id);
+            for (int i=0; i < bookIDs.size(); i++){
+                if (bookIDs.get(i)==id){
+                    System.out.println(bookIDs.get(i));
+                    System.out.println(titles.get(i));
+                    System.out.println(authors.get(i));
+                }
+                else{
+                    System.out.println("Book with given ID not found");
+                }
+            }
         }
          else if (type == 2) 
          {
