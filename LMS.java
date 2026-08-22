@@ -329,6 +329,7 @@ public class LMS
                         break;
                     case 9:
                         backToMainMenu();
+                        displayMainMenu();
                         break;
                     default:
                         System.out.println("[!] Invalid choice. Please try again.");
