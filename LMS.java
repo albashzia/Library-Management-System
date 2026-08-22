@@ -225,8 +225,10 @@ public class LMS
         System.out.println("\n--- Register a New Member ---");
         System.out.print("Enter Member Name: ");
         String name = input.nextLine();
+        memberNames.add(name);
         System.out.println("Enter a new Id: ");
         int newId = input.nextInt();
+        memberIds.add(newId);
         System.out.println("\n[+] Member '" + name + "' registered successfully.");
         System.out.println("[*] Assigned Member ID: " + newId);
     }
