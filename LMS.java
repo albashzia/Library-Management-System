@@ -255,8 +255,7 @@ public class LMS
         }
     }
 
-    public static void searchMember(Scanner input) 
-    {
+    public static void searchMember(Scanner input) {
         System.out.println("\n--- Search Member ---");
         System.out.println("Search by (1) ID or (2) Name?");
         System.out.print("Enter option (1 or 2): ");
@@ -267,18 +266,28 @@ public class LMS
             System.out.print("Enter Member ID: ");
             int id = input.nextInt();
             input.nextLine();
-            for(int i = 0; i < memberIds.size(); i++){
-                if (memberIds.get(i)==id){
+            for (int i = 0; i < memberIds.size(); i++) {
+                if (memberIds.get(i) == id) {
                     System.out.println("Member found");
-                    System.out.println("Id: "+memberIds.get(i));
-                    System.out.println("Name: "+memberNames.get(i));
+                    System.out.println("Id: " + memberIds.get(i));
+                    System.out.println("Name: " + memberNames.get(i));
                 }
             }
         } else if (type == 2) {
             System.out.print("Enter Member Name: ");
             String name = input.nextLine();
-            System.out.println("\n[+] Found: Name " + name + ", ID: 5001");
-        } else {
+
+            for (int i = 0; i < memberNames.size(); i++) {
+                if (memberNames.get(i).equalsIgnoreCase(name)) {
+                    System.out.println("Member found");
+                    System.out.println("Member Id: " + memberIds.get(i));
+                    System.out.println("Member Name: " + memberNames.get(i));
+                } else {
+                    System.out.println("Member not found");
+                }
+            }
+        }
+        else{
             System.out.println("[!] Invalid search option.");
         }
     }
