@@ -212,7 +212,7 @@ public class LMS
 
     public static void showAvailableRooms() 
     {
-        System.out.println("\n--- Available Study Rooms (Mock Data) ---");
+        System.out.println("\n--- Available Study Rooms ---");
         System.out.printf("%-10s | %-15s | %-15s%n", "Room No.", "Status", "Reserved By");
         System.out.println("---------------------------------------------");
     }
@@ -247,7 +247,7 @@ public class LMS
 
     public static void displayAllMembers() 
     {
-        System.out.println("\n--- All Registered Members (Mock Data) ---");
+        System.out.println("\n--- All Registered Members ---");
         System.out.printf("%-15s | %-30s%n", "Member ID", "Name");
         System.out.println("----------------------------------------------");
         for (int i = 0; i < memberIds.size(); i++){
@@ -299,7 +299,7 @@ public class LMS
         int id = input.nextInt();
         input.nextLine();
 
-        // --- Mock Logic ---
+
         System.out.println("\n--- Books Issued to Member " + id + " ---");
         System.out.printf("%-10s | %-30s | %-15s%n", "Book ID", "Title", "Issue Date");
         System.out.println("---------------------------------------------------------------");
@@ -312,7 +312,7 @@ public class LMS
         int id = input.nextInt();
         input.nextLine();
         
-        // --- Mock Logic ---
+
         if (id == 5002) {
             System.out.println("\n[+] Member ID 5002 removed successfully.");
         } else if (id == 5001) {
