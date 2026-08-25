@@ -9,6 +9,10 @@ public class LMS
     public static ArrayList<Integer> totalQuantities = new ArrayList<>(); // Total copies owned by library
     public static ArrayList<Integer> availableQuantities = new ArrayList<>(); // Copies available to borrow
     public static ArrayList<String> bookStatus = new ArrayList<>(); // e.g., "Good", "Damaged"
+    
+public static ArrayList<Integer> issuedBooksIDs = new ArrayList<>();
+    public static ArrayList<String> issuedBookTitles = new ArrayList<>();
+    public static ArrayList<String> issuedBooksAuthors = new ArrayList<>();
 
     public static ArrayList<String> memberNames = new ArrayList<>();
     public static ArrayList<Integer> memberIds = new ArrayList<>();
