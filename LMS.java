@@ -219,6 +219,9 @@ public class LMS
         System.out.println("\n--- Available Study Rooms ---");
         System.out.printf("%-10s | %-15s | %-15s%n", "Room No.", "Status", "Reserved By");
         System.out.println("---------------------------------------------");
+        for (int i = 0; i < 5; i++){
+            System.out.printf("%-10d | %-15s | %-15s%n", roomNumbers[i],roomStatus[i],reservedByMember[i]);
+        }
     }
 
     public static void reserveRoom() 
