@@ -13,6 +13,10 @@ public class LMS
     public static ArrayList<String> memberNames = new ArrayList<>();
     public static ArrayList<Integer> memberIds = new ArrayList<>();
 
+    public int[] roomNumbers = new int[5];
+    public String[] roomStatus = new String[5];
+    public String[] reservedByMember = new String[5];
+
     private static void displayMainMenu() 
     {
         System.out.println("\n=============================================");
