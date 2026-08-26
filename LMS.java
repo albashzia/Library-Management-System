@@ -171,7 +171,7 @@ public class LMS
 
         try{
             issuedBooksIDs.add(bookId);
-
+            issuedToMemberIDs.add(memberId);
             bookIssueDate.add(date);
         }
         catch (Exception e){
