@@ -169,6 +169,16 @@ public class LMS
         input.nextLine(); 
         System.out.print("Enter today's Date (YYYY-MM-DD): ");
         String date = input.nextLine();
+
+        try{
+            issuedBooksIDs.add(bookId);
+
+            bookIssueDate.add(date);
+        }
+        catch (Exception e){
+            System.out.println("Couldn't issue the book.");
+            System.out.println(e.getMessage());
+        }
         System.out.println("-> Attempting to issue Book " + bookId + " to Member " + memberId + " on " + date);
     }
 
