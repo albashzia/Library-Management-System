@@ -11,6 +11,7 @@ public class LMS
     public static ArrayList<String> bookStatus = new ArrayList<>(); // e.g., "Good", "Damaged"
     
     public static ArrayList<Integer> issuedBooksIDs = new ArrayList<>();
+    public static ArrayList<Integer> issuedToMemberIDs = new ArrayList<>();
     public static ArrayList<String> bookIssueDate = new ArrayList<>();
 
     public static ArrayList<String> memberNames = new ArrayList<>();
