@@ -13,6 +13,7 @@ public class LMS
 public static ArrayList<Integer> issuedBooksIDs = new ArrayList<>();
     public static ArrayList<String> issuedBookTitles = new ArrayList<>();
     public static ArrayList<String> issuedBooksAuthors = new ArrayList<>();
+    public static ArrayList<String> bookIssueDate = new ArrayList<>();
 
     public static ArrayList<String> memberNames = new ArrayList<>();
     public static ArrayList<Integer> memberIds = new ArrayList<>();
