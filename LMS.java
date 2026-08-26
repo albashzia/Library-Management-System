@@ -211,7 +211,7 @@ public static ArrayList<Integer> issuedBooksIDs = new ArrayList<>();
     public static void showAllIssuedBooks() 
     {
          System.out.println("\n--- Issued Books  ---");
-        System.out.printf("%-10d | %-15s | %-15s%n", "Book Ids", "Book Title", "Book Authors");
+        System.out.printf("%-10s | %-15s | %-15s%n", "Book Ids", "Book Title", "Book Authors");
         System.out.println("---------------------------------------------");
         for (int i = 0; i < issuedBooksIDs.size(); i++){
             System.out.printf("%-10d | %-15s | %-15s%n", issuedBooksIDs.get(i), issuedBookTitles. get(i),issuedBooksAuthors.get(i));
