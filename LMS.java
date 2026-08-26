@@ -224,7 +224,7 @@ public class LMS
         System.out.printf("%-10s | %-15s | %-15s%n", "Book Ids", "Book Title", "Book Authors");
         System.out.println("---------------------------------------------");
         for (int i = 0; i < issuedBooksIDs.size(); i++){
-            System.out.printf("%-10d | %-15s | %-15s%n", issuedBooksIDs.get(i));
+            System.out.printf("%-15d | %-15d | %-15s%n", issuedBooksIDs.get(i),issuedToMemberIDs.get(i),bookIssueDate.get(i));
         }
     }
 
