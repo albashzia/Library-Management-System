@@ -10,7 +10,7 @@ public class LMS
     public static ArrayList<Integer> availableQuantities = new ArrayList<>(); // Copies available to borrow
     public static ArrayList<String> bookStatus = new ArrayList<>(); // e.g., "Good", "Damaged"
     
-public static ArrayList<Integer> issuedBooksIDs = new ArrayList<>();
+    public static ArrayList<Integer> issuedBooksIDs = new ArrayList<>();
     public static ArrayList<String> issuedBookTitles = new ArrayList<>();
     public static ArrayList<String> issuedBooksAuthors = new ArrayList<>();
     public static ArrayList<String> bookIssueDate = new ArrayList<>();
@@ -211,7 +211,7 @@ public static ArrayList<Integer> issuedBooksIDs = new ArrayList<>();
 
     public static void showAllIssuedBooks() 
     {
-         System.out.println("\n--- Issued Books  ---");
+        System.out.println("\n--- Issued Books  ---");
         System.out.printf("%-10s | %-15s | %-15s%n", "Book Ids", "Book Title", "Book Authors");
         System.out.println("---------------------------------------------");
         for (int i = 0; i < issuedBooksIDs.size(); i++){
@@ -315,7 +315,6 @@ public static ArrayList<Integer> issuedBooksIDs = new ArrayList<>();
         System.out.print("Enter Member ID: ");
         int id = input.nextInt();
         input.nextLine();
-
 
         System.out.println("\n--- Books Issued to Member " + id + " ---");
         System.out.printf("%-10s | %-30s | %-15s%n", "Book ID", "Title", "Issue Date");
