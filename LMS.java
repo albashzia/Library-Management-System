@@ -70,20 +70,32 @@ public class LMS
     public static void addBook(Scanner input) 
     {
         System.out.println("\n--- Add a New Book ---");
+
         System.out.print("Enter new Book ID: ");
         int id = input.nextInt();
-        bookIDs.add(id);
         input.nextLine();
+
         System.out.print("Enter Book Title: ");
         String title = input.nextLine();
-        titles.add(title);
+
         System.out.print("Enter Author Name: ");
         String author = input.nextLine();
-        authors.add(author);
+
         System.out.print("Enter Total Quantity purchased: ");
         int total = input.nextInt();
-        totalQuantities.add(total);
-        input.nextLine(); 
+        input.nextLine();
+
+        try {
+            bookIDs.add(id);
+            titles.add(title);
+            authors.add(author);
+            totalQuantities.add(total);
+        }
+        catch (Exception e){
+            System.out.println("Couldn't add the book");
+            System.out.println(e.getMessage());
+        }
+
         System.out.println("-> Collected details for: " + title + " (ID: " + id + ", Qty: " + total + ") by "+author); 
     }
 
