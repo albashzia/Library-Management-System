@@ -11,8 +11,6 @@ public class LMS
     public static ArrayList<String> bookStatus = new ArrayList<>(); // e.g., "Good", "Damaged"
     
     public static ArrayList<Integer> issuedBooksIDs = new ArrayList<>();
-    public static ArrayList<String> issuedBookTitles = new ArrayList<>();
-    public static ArrayList<String> issuedBooksAuthors = new ArrayList<>();
     public static ArrayList<String> bookIssueDate = new ArrayList<>();
 
     public static ArrayList<String> memberNames = new ArrayList<>();
@@ -225,7 +223,7 @@ public class LMS
         System.out.printf("%-10s | %-15s | %-15s%n", "Book Ids", "Book Title", "Book Authors");
         System.out.println("---------------------------------------------");
         for (int i = 0; i < issuedBooksIDs.size(); i++){
-            System.out.printf("%-10d | %-15s | %-15s%n", issuedBooksIDs.get(i), issuedBookTitles. get(i),issuedBooksAuthors.get(i));
+            System.out.printf("%-10d | %-15s | %-15s%n", issuedBooksIDs.get(i));
         }
     }
 
