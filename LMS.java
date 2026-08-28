@@ -266,9 +266,22 @@ public class LMS
         }
     }
 
-    public static void reserveRoom() 
+    public static void reserveRoom(Scanner input)
     {
         System.out.println("-> Functionality to reserve a study room.");
+        System.out.println("Enter the room number to reserve: ");
+        int roomNumber = input.nextInt();
+        input.nextLine();
+        for (int i = 0; i < roomStatus.length; i++){
+            if (roomNumber == roomNumbers[i]){
+                if (roomStatus[i].equals(null)){
+                    roomStatus[i] = "Reserved";
+                }
+                else{
+                    System.out.println("Room already reserved");
+                }
+            }
+        }
     }
 
     public static void cancelReservation() 
