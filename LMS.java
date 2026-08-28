@@ -90,6 +90,7 @@ public class LMS
             titles.add(title);
             authors.add(author);
             totalQuantities.add(total);
+            availableQuantities.add(total);
         }
         catch (Exception e){
             System.out.println("Couldn't add the book");
