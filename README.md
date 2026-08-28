@@ -1,10 +1,10 @@
 <h1>Library Management System</h1>
 
 <p>
-  This repository is our team’s shared space for building a complete 
+  This repository is a space for building a complete 
   <strong>Library Management System (LMS)</strong>. The goal is to create a 
   fully functional program using arrays, functions, and clean modular structure.
-  All code updates, fixes, and contributions from team members will be managed here.
+  All code updates, fixes, and contributions will be managed here.
 </p>
 
 <h2> Main Features</h2>
@@ -42,9 +42,9 @@
 
 <h2> Purpose of This Repository</h2>
 <p>
-  This repository helps us maintain a clean workflow while developing the LMS together.
-  Every change is saved here, allowing us to collaborate, review code, 
-  and build the final system step-by-step without losing track of our progress.
+  This repository helps maintain a clean workflow while developing the LMS.
+  Every change is saved here, allowing to collaborate, review code, 
+  and build the final system step-by-step without losing track of any progress.
 </p>
 
 <h2> Tech Stack</h2>
@@ -54,4 +54,4 @@
   <li>Development Flow: Modular programming with functions</li>
 </ul>
 
-<p><em>Feel free to explore the code and follow our progress as this project grows!</em></p>
+<p><em>Feel free to explore the code and follow the progress as this project grows!</em></p>
