@@ -107,12 +107,17 @@ public class LMS
         input.nextLine();
         System.out.println("-> Attempting to remove book with ID: " + id);
         for (int i=0; i < bookIDs.size(); i++){
-            if (bookIDs.get(i)==id){
-                bookIDs.remove(i);
-                titles.remove(i);
-                authors.remove(i);
-                totalQuantities.remove(i);
-                System.out.println("Book Removed Successfully");
+            try{
+                if (bookIDs.get(i)==id){
+                    bookIDs.remove(i);
+                    titles.remove(i);
+                    authors.remove(i);
+                    totalQuantities.remove(i);
+                    System.out.println("Book Removed Successfully");
+                }
+            } catch (Exception e) {
+                System.out.println("Couldn't remove book");
+                System.out.println(e.getMessage());
             }
         }
     }
