@@ -452,7 +452,7 @@ public class LMS
                         showAvailableRooms();
                         break;
                     case 2:
-                        reserveRoom();
+                        reserveRoom(input);
                         break;
                     case 3:
                         cancelReservation();
