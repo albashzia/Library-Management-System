@@ -7,17 +7,6 @@
   All code updates, fixes, and contributions from team members will be managed here.
 </p>
 
-<h2> Team Collaboration</h2>
-<p>
-  This repo is used by our team of three developers to:
-</p>
-<ul>
-  <li>Write and share code</li>
-  <li>Keep all updates in one place</li>
-  <li>Track work progress</li>
-  <li>Work together on different modules</li>
-</ul>
-
 <h2> Main Features</h2>
 <h3>1. Books Management</h3>
 <ul>
