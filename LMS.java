@@ -186,6 +186,11 @@ public class LMS
         System.out.println("\n--- Issue a Book ---");
         System.out.print("Enter Book ID to issue: ");
         int bookId = input.nextInt();
+        for (int i = 0; i < bookIDs.size(); i++){
+            if (bookId == bookIDs.get(i)) {
+                availableQuantities.set(i,totalQuantities.get(i) - 1);
+            }
+        }
         System.out.print("Enter Member ID: ");
         int memberId = input.nextInt();
         input.nextLine(); 
