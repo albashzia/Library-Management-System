@@ -85,12 +85,17 @@ public class LMS
         int total = input.nextInt();
         input.nextLine();
 
+        System.out.println("Enter Book Status (Good/Damaged): ");
+        String status = input.nextLine();;
+
+
         try {
             bookIDs.add(id);
             titles.add(title);
             authors.add(author);
             totalQuantities.add(total);
             availableQuantities.add(total);
+            bookStatus.add(status);
         }
         catch (Exception e){
             System.out.println("Couldn't add the book");
