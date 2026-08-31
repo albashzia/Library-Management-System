@@ -179,10 +179,10 @@ public class LMS
 
     public static void displayAvailableBooks()
     {
-        System.out.println("-> Functionality to display all available books.");
+        System.out.printf("%-10s | %-15s | %-15s%n", "Book Id", "Book Title", "Author Name");
         for (int i = 0; i < bookIDs.size(); i++){
             if (totalQuantities.get(i).equals(availableQuantities.get(i))){
-                System.out.println(bookIDs.get(i)+" "+titles.get(i)+" "+authors.get(i));
+                System.out.printf("%-10d | %-15s | %-15s%n",bookIDs.get(i),titles.get(i),authors.get(i));
             }
         }
     }
