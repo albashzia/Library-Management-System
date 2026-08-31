@@ -119,6 +119,7 @@ public class LMS
                     titles.remove(i);
                     authors.remove(i);
                     totalQuantities.remove(i);
+                    availableQuantities.remove(i);
                     System.out.println("Book Removed Successfully");
                 }
             } catch (Exception e) {
