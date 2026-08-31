@@ -16,6 +16,7 @@ public class LMS
 
     public static ArrayList<String> memberNames = new ArrayList<>();
     public static ArrayList<Integer> memberIds = new ArrayList<>();
+    public static ArrayList<Integer> booksIssuedToMember = new ArrayList<>();
 
     public static int[] roomNumbers = {101,102,103,104,105};
     public static String[] roomStatus = new String[5];
@@ -199,7 +200,7 @@ public class LMS
         }
         System.out.print("Enter Member ID: ");
         int memberId = input.nextInt();
-        input.nextLine(); 
+        input.nextLine();
         System.out.print("Enter today's Date (YYYY-MM-DD): ");
         String date = input.nextLine();
 
