@@ -179,6 +179,11 @@ public class LMS
     public static void displayAvailableBooks()
     {
         System.out.println("-> Functionality to display all available books.");
+        for (int i = 0; i < bookIDs.size(); i++){
+            if (totalQuantities.get(i).equals(availableQuantities.get(i))){
+                System.out.println(bookIDs.get(i)+" "+titles.get(i)+" "+authors.get(i));
+            }
+        }
     }
 
     public static void issueBook(Scanner input) 
