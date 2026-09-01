@@ -271,6 +271,7 @@ public class LMS
     public static void backToMainMenu() 
     {
         System.out.println("-> Returning to Main Menu.");
+        displayMainMenu();
     }
 
     public static void showAvailableRooms() 
@@ -450,7 +451,6 @@ public class LMS
                         break;
                     case 9:
                         backToMainMenu();
-                        displayMainMenu();
                         break;
                     default:
                         System.out.println("[!] Invalid choice. Please try again.");
@@ -479,7 +479,6 @@ public class LMS
                         break;
                     case 5:
                         backToMainMenu();
-                        displayMainMenu();
                         break;
                     default:
                         System.out.println("[!] Invalid choice. Please try again.");
@@ -512,7 +511,6 @@ public class LMS
                         break;
                     case 6:
                         backToMainMenu();
-                        displayMainMenu();
                         break;
                     default:
                         System.out.println("[!] Invalid choice. Please try again.");
