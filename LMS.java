@@ -478,7 +478,7 @@ public class LMS
                         checkReservationStatus(input);
                         break;
                     case 5:
-                        System.out.println("-> Returning to Main Menu.");
+                        backToMainMenu();
                         displayMainMenu();
                         break;
                     default:
@@ -511,7 +511,7 @@ public class LMS
                         removeMember(input);
                         break;
                     case 6:
-                        System.out.println("-> Returning to Main Menu.");
+                        backToMainMenu();
                         displayMainMenu();
                         break;
                     default:
