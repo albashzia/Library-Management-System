@@ -198,9 +198,19 @@ public class LMS
                 availableQuantities.set(i,totalQuantities.get(i) - 1);
             }
         }
+
         System.out.print("Enter Member ID: ");
         int memberId = input.nextInt();
         input.nextLine();
+        for(int i = 0; i < memberIds.size();i++){
+            if (memberIds.get(i)==memberId){
+                booksIssuedToMember.add(memberIds.get(i));
+            }
+            else{
+                System.out.println("Member not found");
+            }
+        }
+
         System.out.print("Enter today's Date (YYYY-MM-DD): ");
         String date = input.nextLine();
 
